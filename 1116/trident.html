@@ -1,0 +1,78 @@
+HTML
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中間テスト</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        let scool = "トライデントコンピュータ専門学校";
+        let course = "Webデザイン学科";
+        console.log(address);
+
+        let address = 'トライデントコンピュータ専門学校' + 'Webデザイン学科';
+
+        console.log(scool, course);
+
+
+        const img_cat = new Image();
+        catImg.src = "https://path/cat.png/cat.jpg";
+
+
+        const catImg = document.querySelector("img_cat");
+
+        const alt = catImg.alt;
+
+        console.log(alt);
+
+        const goranger = ["アカレンジャー", "アオレンジャー", "ミドレンジャー", "キレンジャー", "モモレンジャー"];
+        console.log(goranger[4]);
+        for (let i = 0; i < goranger.length; i++) {
+            console.log(goranger[i]);
+        }
+
+        const span = document.querySelector("span");
+
+        span.style.fontWeight = "bold";
+
+        span.addEventListener("click", function () {
+            console.log(span.textContent);
+        });
+
+
+        const btn = document.createElement("button");
+
+
+        const btn = document.querySelector("#btn");
+
+        btn.addEventListener("click", function () {
+            console.log("レッツゴー！");
+        });
+
+
+        const btn = document.querySelector("#btn");
+
+        btn.addEventListener("click", function () {
+            // 背景色を変更する
+            document.body.style.backgroundColor = "red";
+        });
+
+
+    </script>
+    <div class="images">
+        <img src="path/cat.png" alt="猫の画像" class="img_cat">
+        <img src="path/dog.png" alt="犬の画像" class="img_dog">
+        <img src="path/panda.png" alt="パンダの画像" class="img_panda">
+    </div>
+</body>
+
+</html>
