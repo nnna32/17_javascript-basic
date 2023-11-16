@@ -5,6 +5,21 @@
 1. 10月5日（木）始めの一歩
 2. 10月5日(木)GitHub　リポジトリ作成
 
+## 11 月 １６ 日
+変数の宣言と代入
+文字列の結合
+HTML 要素の取得と操作
+document.querySelector()とdocument.querySelecotrAll()
+配列要素の for 文での取得
+NodeList と for 文
+クリックイベント
+属性（Attribute）の操作
+classList の操作
+条件分岐（if〜else 文）
+比較演算子
+論理演算子
+オブジェクトのプロパティとメソッド
+
 ## 11 月 ９ 日
 if 文による条件分岐
 比較演算子と bool（boolean 型）値
