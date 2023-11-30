@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演習</title>
+</head>
+
+<body>
+    <Ul>
+        <li>犬</li>
+        <li>猫</li>
+    </Ul>
+    <p class="result"></p>
+    <div class="fnArea"></div>
+
+    <script>
+
+        const dogBtn = document.querySelector("li");
+        const catBtn = document.querySelector("li:nth-child(2)");
+        const resultArea = document.querySelector(".result");
+
+        dogBtn.addEventListener("click", function () {
+            console.log("あなたは◯派です。");
+            resultArea.textContent = "あなたは、◯派です・";
+        })
+
+        // const catBtn h1_element | null
+        catBtn.addEventListener("click", function () {
+            console.log("あなたは◯派です。");
+            resultArea.textContent = "あなたは、◯派です・";
+        })
+
+
+        console.log(dogBtn, catBtn);
+
+
+        // 関数式
+
+        console.log("あなたは◯派です。");
+        const animalCheck = function (animal) {
+            resultArea.textContent = "あなたは、" + animal + "派です。";
+        }
+
+        dogBtn.addEventListener("click", function () {
+            console.dir(this);
+            animalCheck("犬");
+        })
+
+
+        catBtn.addEventListener("click", function () {
+            console.log(this);
+            animalCheck("猫");
+        })
+
+
+        // 関数の実行、引数には配列
+        const member_list = ["チェウォン", "サクラ", "ユンジン", "カズハ", "ウンチェ"];
+        const mugiwara_list = ["モンキー・D・ルフィ", "ナミ", "ロロノア・ゾロ", "ヴィンスモーク・サンジ", "ウソップ", "トニートニー・チョッパー", "ニコ・ロビン", "フランキー", "ブルック", "ジンベエ"];
+
+        // .fnAreaに上記の配列の要素を<li>で追加する
+        const memberArea = document.querySelector(".fnArea");
+        const memberPush = function (members) {
+            // memberAreaにul,liで各メンバーを入れる
+            console.log(members);
+            const ulElm = document.createElement("ul");
+            for (let i = 0; i < members.length; i++) {
+                const liElm = document.createElement("li");
+                ulElm.textContent = members[i];
+                console.log(members[i]);
+            }
+
+        }
+
+        // 関数の実行
+        memberPush(member_list);// LELSLAFIMのメンバー
+        memberPush(member_list);// 麦わらの一味
+
+
+
+
+
+
+        // 関数の定義（関数式）
+
+        const yoshinoya = function (gydon, weight, opion, price) {
+            console.log(gyudon + "の" + weight + "、" + opion + "で" + price + "円");
+            console.log(`${gyudon}の${weight},${opion}円｀);
+        }
+
+        // 関数の実行
+        複数の引数を読み込む場合は、,で区切る。
+
+    yoshinoya("牛丼", "並盛", "つゆだく", 388); //牛丼の並盛、つゆだくで 388 円
+    yoshinoya("豚丼", "大盛", "たまご", 592); //豚丼の大盛、たまごで 592 円
+
+            // 引数が配列
+
+    const sumCard = function (card) {
+    console.log(card);
+let total = 0;
+// すべてを足す処理
+for (let i = 0; i < card.length; i++) {
+    total += card[i]; //toral = total + card[i]
+}
+console.log(total);
+};
+
+// 配列
+const card_list = [1, 2, 3, 4];
+
+関数の実行、引数には配列
+sumCard(card_list); //10
+
+// </script>
+
+    //
+</body>
+
+//
+
+</html>

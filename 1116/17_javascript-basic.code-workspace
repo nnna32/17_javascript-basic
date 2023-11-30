@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "17_javascript-basic",
+			"path": ".."
+		},
+		{
+			"name": "1116",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "17_javascript-basic"
+	}
+}
