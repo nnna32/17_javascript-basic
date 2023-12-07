@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演習</title>
+</head>
+
+<body>
+
+    <div class="fnArea"></div>
+
+    <script>
+        const member_list = ["チェウォン", "サクラ", "ユンジン", "カズハ", "ウンチェ"];
+        const mugiwara_list = [
+            "モンキー・D・ルフィ",
+            "ナミ",
+            "ロロノア・ゾロ",
+            "ヴィンスモーク・サンジ",
+            "ウソップ",
+            "トニートニー・チョッパー",
+            "ニコ・ロビン",
+            "フランキー",
+            "ブルック",
+            "ジンベエ",
+        ];
+
+        const memberArea = document.querySelector(".fnArea");
+
+        const memberPush = function (members)
+
+        // ボタンをとる
+        const lesserafimBtn = document.querySelector(".lesserafim");
+        const onepeaceBtn = document.querySelector(".onepeace")
+
+        lesserafimBtn.addEventListener("click", function () {
+            console.log("ルセラフィム");
+            memberPush(member_list);
+        })
+
+        引数１と引数２を足す、関数の定義
+        const addition = function (a, b) {
+            const c = a + b;
+            console.log(c);
+        }
+
+        // 関数の実行
+
+        addition(10, 11);// コンソール２１と表示される
+        addition(30, "6");// 306
+
+        戻り値のある関数の定義
+        const addition2 = function (a, b) {
+            const c = a * b
+            return c;//戻り値
+        }
+
+        // 関数の実行
+        const result = addition2(2, 5)//25
+        console.log(result);//コンソールと表示される
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
