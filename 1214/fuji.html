@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuji</title>
+</head>
+
+<body>
+
+    <div class="photo">
+        <img src="images/mt-fuji001.jpg" id="mt-fuji" />
+    </div>
+    <div class="buttons">
+        <button type="button" class="image-fuji">富士山1</button>
+        <button type="button" class="image-fuji">富士山2</button>
+        <button type="button" class="image-fuji">富士山3</button>
+    </div>
+    <script>
+
+        // 画像から取得
+        const fujiImg_list = ["mt-fuji001.jpg", "mt-fuji002.jpg", "mt-fuji003.jpg"];
+
+        // 富士山のボタンをすべてquerySelectorAllで変数に取得
+        const mtFujiBtn = document.querySelectorAll(".image-fuji")
+        console.fuji(mtFujiBtn);
+        // NodeListという配列っぽい値
+
+        // 富士山１
+        console.log(mtFujiBtn[0]);
+
+        // 個別
+        mtFujiBtnBtn[0].addEvenListner("click", function () {
+            console.log("クリック");
+            // imgのsrc配列から設定する
+
+        })
+
+        // NodeListなので　for文でそれぞれのボタンにclick　イベントを登録する
+        // addEventListener
+        for (let i = 0; i < mtFujiBtn.length; i++) {
+            mtFujiBtn[i].addEventListener("click", function () {
+                // iを使ってsetAtteibute
+            })
+        }
+
+
+    </script>
+</body>
+
+</html>
