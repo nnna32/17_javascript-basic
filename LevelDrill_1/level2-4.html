@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>レベル2-変数の値をappendChild</title>
+</head>
+
+<body>
+  <h1>美少女戦士セーラームーン</h1>
+  <ul class="sailersenshi">
+    <li>セーラームーン</li>
+    <li>セーラーマーキュリー</li>
+    <li>セーラーマーズ</li>
+    <li>セーラージュピター</li>
+    <li>セーラーヴィーナス</li>
+    <li class="uranusu">セーラーウラヌス</li>
+    <li class="nepuchuun">セーラーネプチューン</li>
+  </ul>
+  <script>
+    //下記の変数を使って、セーラーウラヌスとセーラーネプチューンをセーラームーンに追加してください。
+    //例
+    const sailorSensi = document.querySelector(".sailersenshi");
+    const liElm1 = document.createElement("li");
+    const chibiusa = "セーラーちびムーン";
+    const liElm1 = document.createElement("li");
+    liElm1.textContent = chibiusa;
+    sailorSensi.appendChild(liElm1);
+
+    //セーラーウラヌス
+    const seeraauraa = document.querySelector(".uranusu");
+    const liElm1 = document.createElement("li");
+    const seeraauraa = "セラーウラヌス";
+    const liElm1 = document.createElement("li");
+    liElm1.textContent = seeraauraa;
+    sailorSensi.appendChild(liElm1);
+
+    //セーラーネプチューン
+    const moon = document.querySelector(".nepuchuun");
+    const liElm1 = document.createElement("li");
+    const moon = "セーラーネプチューン";
+    const liElm1 = document.createElement("li");
+    liElm1.textContent = moon;
+    sailorSensi.appendChild(liElm1);
+
+  </script>
+</body>
+
+</html>
