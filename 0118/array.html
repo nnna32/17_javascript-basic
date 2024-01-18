@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配列の操作</title>
+</head>
+
+<body>
+
+    <ul>
+        <li>りんご</li>
+        <li>みかん</li>
+        <li>パイナップル</li>
+    </ul>
+
+    <script>
+        // 値を変更したい場合は、点字で指定
+        const animals = ["dog", "cat", "bird"];
+        animals[2] = "lion";
+        console.log(animals);
+
+
+        animals.push("tiger");
+        console.log(animals.length);//4
+        console.log(animals);
+
+        // NodeListやHTMLCOLLectionの特徴
+        const fruits = document.querySelectorAll("li");
+        console.log(fruits);//NodeList　*配列っぽいもの
+        fruits.push("<li>いちご</li>");
+
+
+        animals.unshift("elephant");
+        console.log(animals);
+
+    </script>
+
+</body>
+
+</html>
