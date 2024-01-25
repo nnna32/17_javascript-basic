@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日付オブジェクト</title>
+</head>
+
+<body>
+
+    <script>
+        const now = new Date();
+        console.log(now); //Sat Dec 18 2021 21:06:07 GMT+0900 (日本標準時)
+
+        const day = ["日", "月", "火", "水", "木", "金", "土"];
+        console.log(now.getDate()); // 4
+        console.log(day[now.getDay()]);
+
+        const promotionDay = new Date("2024-2-8");
+        console.log(promotionDay - now);//ミリ秒
+
+        const promotionDay = new Date("2024-2-8");
+        console.log(promotionDay - now);//ミリ秒
+        const difference = promotionDay - now;//残り時間
+
+        // ミリ秒＝秒
+        const seconds = difference / 1000;
+        console.log(seconds);
+
+
+        const seconds = difference / 60;
+        console.log(minites);
+
+
+        const hours = minites / 60;
+        console.log(hours);
+
+        const days = hours / 24;
+        console.log(days);
+
+        // ミリ秒＝日
+        const days = difference / (1000 * 60 * 24);
+    </script>
+
+</body>
+
+</html>
