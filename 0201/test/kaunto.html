@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カウント</title>
+</head>
+
+<body>
+
+    <div class="counter">
+        <button class="decrease" onclick="decreaseCount()">-</button>
+        <span class="count" id="count">0</span>
+        <button class="increase" onclick="increaseCount()">+</button>
+    </div>
+
+    <script>
+        let count = 0;
+        function updateCounter() {
+            document.getElementById('count').textContent = count;
+        }
+        function increaseCount() {
+            count++;
+            updateCounter();
+        }
+        function decreaseCount() {
+            if (count > 0) {
+                count--;
+                updateCounter();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

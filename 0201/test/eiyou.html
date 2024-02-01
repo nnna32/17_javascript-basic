@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栄養</title>
+</head>
+
+<body>
+
+    <h1>三大栄養素</h1>
+    <ul>
+        <li class="protein">たんぱく質</li>
+        <li class="fats">脂質</li>
+        <li class="carbohydrate">炭水化物</li>
+    </ul>
+
+    <script>
+        const eiyou = document.querySelectorAll('li');
+
+        for (let i = 0; i < eiyou.length; i++) {
+            eiyou[i].addEventListener('click', function () {
+                // クリックされた要素のテキストをコンソールに表示
+                console.log(eiyou[i].textContent);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
